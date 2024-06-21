@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Logo.png" type="image/png">
+    <title>CalculadoraPlus | Mauricio</title>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <div class="calculadora">
+        <div class="barra-resultado">
+            <span id="Resultado"></span>
+        </div>
+        <input class="operador-borrar" type="button" value="Borrar" id="Borrar">
+        <div class="controles">
+             
+            <input class="numero" type="button" value="7" id="siete">
+            <input class="numero" type="button" value="8" id="ocho">
+            <input class="numero" type="button" value="9" id="nueve">
+            <input class="operador" type="button" value="/" id="dividir" title="Dividir">
+            <input class="numero" type="button" value="4" id="cuatro"> 
+            <input class="numero" type="button" value="5" id="cinco">
+            <input class="numero" type="button" value="6" id="seis">
+            <input class="operador" type="button" value="*" id="multiplicar" title="Multiplicar">
+            <input class="numero" type="button" value="1" id="uno">
+            <input class="numero" type="button" value="2" id="dos">
+            <input class="numero" type="button" value="3" id="tres">
+            <input class="operador" type="button" value="-" id="restar" title="Restar">
+            <input class="resultado" type="button" value="=" id="igual">
+            <input class="numero" type="button" value="0" id="cero">
+            <input class="numero" type="button" value="." id="coma">
+            <input class="operador" type="button" value="+" id="sumar" title="Sumar">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="particles.min.js"></script>
+    <script>
+        particlesJS(
+            {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#000000"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#000000",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+        )
+    </script>
+    
+</body>
+</html>
